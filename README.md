@@ -9,7 +9,7 @@ For an explanation on why this is true, his follow up video explains it very wel
 
 ## Code
 
-I started writing this code when I first started learning C, as I thought it was a project that would really benefit from C's speed.
+I decided to write my own simulation of this system when I first started learning C, as I thought it would really benefit from C's speed.
 My first attempt `C-implementation/collision-sim.c` only worked up to 5 digits (4 d.p.) of pi.
 At 6 digits and above, I encountered a bug whereby the program to reported it wasn't running at high enough resolution (two collisions detected in one time step), yet the collision counter was way higher than should have been possible.
 I spent ages trying to debug this issue and ultimately failed to diagnose and fix the issue.
