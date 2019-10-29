@@ -19,7 +19,7 @@ The first main area I improved was the way the system was incremented.
 Originially I had been using fractions of seconds as a timestep to increment the system and ultimately control resolution.
 I realised it would be simpler to control the resolution with the initial velocity, instead incrementing the system 1 second at a time.
 This has a couple of speed benefits for the main loop:
-1. Time can now be stored as an integer which is quicker to increment an integer than add two floats.
+1. Time can now be stored as an integer which is quicker to increment than adding two floats.
 2. Position adjustment requires one addition operation (x = x+v) rather than multiplication and addition (x = x+(v*dt))
 
 Another big improvement was changing the way the loop worked to automatically check if it was finished rather than running for a set amount of time.
